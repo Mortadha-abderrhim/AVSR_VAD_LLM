@@ -1,0 +1,7 @@
+# Visual Module
+
+The Visual module is taking care of the visual input of the system. It is also the part that will get user inputs allowing him to start and stop the Recording. When the state becomes Recording, it will start sending the image to the topic matching the configuration request. The image could be a compressed image or a raw image eventually combined with face landmarks. The compressed image is probably always preferred compared to the raw image as it is transferred faster. Doing the landmarks detection at this step while waiting to send the next image avoid to do it during the video process, it might make win a small amount of computation time but in return add some computations on the laptop. During all the Recording state it will count the number of images sent while the Video module sends back the number of frame received so that when the Transferring state start, the Visual can control that all images were correctly sent before confirming to the State Manager that all images were transferred.
+
+On the cv2 window press "r" or "space" to start recording. During experiment the noise level registered can also be changed by pressing "i" to increase it or "n" or "p" to respectively switch to the next or previous sentence.
+
+In evaluation mode, the user is not allowed to interact with the system. It will load the video sent by the evaluator and then automatically requests to start and stop the Recording.

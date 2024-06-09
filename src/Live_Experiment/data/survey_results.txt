@@ -1,0 +1,6 @@
+['najar', 4, 3, 4, 5, 4, 'the ability to talk about any subject', 'repetiteveness and monotonic voice', 'more human voice']
+['fayala', 5, 5, 5, 3, 3, 'the details and the prespective it get ', "i didn't hear him well and sometimes he dont get what i waant to say", 'more suggestions and more releatd topics ']
+['hassenn', 4, 4, 4, 5, 4, 'asnwering my specific Qs', 'the time ', 'moving, being faster to analyze and answer']
+['Zhenyu',3,4,4,2,4,'coherence good answers to brainstorm','response time and no way to correct and interrupt', 'choose whether the answe streamed or not' ]
+['Fares',1,1,3,3,5, 'it was easy to understand' , 'very slow gives steps to each question' , 'integrating camera to the robot so I can speak to it directly ']
+['yassine', 4, 5, 5, 3, 1, 'The little dances', 'The fact that he was sometimes unwilling to assume a possibility as a fact to further discuss my hypothesis ', 'Sync the movements to speech (lip sync particulaly). Humanize speech (sometimes he was listing bullet points)']

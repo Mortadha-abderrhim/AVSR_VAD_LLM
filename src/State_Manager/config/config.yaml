@@ -1,0 +1,28 @@
+robot:
+  connected: False # If the robot is connected. Otherwise false and we use the laptop`s camera
+  camera: "/camera/color/image_raw" # topic to get the images from 
+  LLM: True
+  task: 'chat' # ['chat', 'translate', 'summarize']
+  context: None #'/home/chiliadmin/Documents/catkin_ws/lessons.txt' # for no context put None
+  chat_model: '/home/karray/Desktop/catkin_ws_PANG_M/FastChat/weights/fastchat-t5-3b-v1.0'
+image:
+  image_format: "jpeg" # "landmarks", "raw_images", "jpeg", "png" or "theora"
+  fps: 30
+audio:
+  channels: 2 # 1 or 2 channels
+  robot: "False"
+  sample_rate: 16000
+  sample_format: "pyaudio.paInt16"  # 16 bits per sample, not tested with other values
+  chunk: 1024  # Record in chunks of 1024 samples
+video:
+  experiment: False # Do not activate it at the same time as evaluation
+  sentence_file: experiment.txt # this file should be in the State_Manager/sentences/ folder
+  number_of_noise_lvl: 1
+  config_file: "/configs/LRS3_AV_WER0.9.ini" # video : "/configs/LRS3_V_WER32.3.ini", audio : "/configs/LRS3_A_WER2.3.ini" "/configs/LRS3_AV_WER0.9.ini"
+evaluation:
+  eval: False # Do not activate it at the same time as experiment
+  with_noise: False
+  video_path: "/video_save2/" #"/video_audio_video_noise/", '/video_save2/
+  video_names: "video_participants_all.txt" # this file should be in the Evaluator/video_folder_names/ folder
+  save_folder: "test_times"
+  preprocessing: "mediapipe" # "retina_fan" or "mediapipe" # make sure it is the same as in the VSR config

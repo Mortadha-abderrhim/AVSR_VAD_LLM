@@ -1,0 +1,4 @@
+<launch>
+    <rosparam command="load" file="$(find state_manager)/config/config.yaml" />
+    <node pkg="state_manager" type="state_manager.py" name="State_manager" output="screen" />
+</launch>
